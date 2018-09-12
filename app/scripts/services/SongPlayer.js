@@ -1,5 +1,4 @@
-
-(function() {
+function() {
   function SongPlayer() {
     var SongPlayer = {};
      var currentSong = null;
@@ -24,11 +23,31 @@
       });
        currentSong = song;
     };
+
+
+      /*Added Private playSong function here.
+    * @function playSong
+    * @desc Plays currently playing song.
+    * @param {Object} song
+    */
+var playSong = function(song) {
+  if (currentBuzzObject) {
+    currentBuzzObject.play();
+    currentSong.playing = true;
+};
+
+
+
+/*
+* @function SongPlayer
+* @desc sets and plays the current Buzz object
+* @param song
+* @type object
+*/
      SongPlayer.play = function(song) {
       if (currentSong !== song) {
         setSong(song);
-        currentBuzzObject.play();
-        song.playing = true;
+        playSong(song);
       } else if (currentSong === song) {
         if (currentBuzzObject.isPaused()) {
           currentBuzzObject.play();
@@ -44,4 +63,23 @@
    angular
     .module('blocJams')
     .factory('SongPlayer', SongPlayer);
- })();
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
