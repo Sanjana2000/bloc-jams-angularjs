@@ -1,5 +1,4 @@
 function() {
-
   function SongPlayer(Fixtures) {
     var SongPlayer = {};
 
@@ -23,9 +22,6 @@ function() {
      * @type {Object}
      */
     var currentBuzzObject = null;
-
-    
-    
     /*
      * @function setSong
      * @desc Stops currently playing song and loads new audio file as currentBuzzObject
@@ -36,7 +32,6 @@ function() {
         currentBuzzObject.stop();
         SongPlayer.currentSong.playing = null;
       }
-
       currentBuzzObject = new buzz.sound(song.audioUrl, {
         formats: ['mp3'],
         preload: true
@@ -118,23 +113,3 @@ function() {
 
 
   })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
