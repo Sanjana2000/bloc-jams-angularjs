@@ -25,7 +25,7 @@ function() {
     };
 
 
-      /*
+      /*Added Private playSong function here.
     * @function playSong
     * @desc Plays currently playing song.
     * @param {Object} song
