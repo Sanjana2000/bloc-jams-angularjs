@@ -34,7 +34,7 @@ var playSong = function(song) {
   if (currentBuzzObject) {
     currentBuzzObject.play();
     currentSong.playing = true;
-};
+}
 
 
 
@@ -59,27 +59,10 @@ var playSong = function(song) {
       song.playing = false;
     };
      return SongPlayer;
-  }
+  };
+}
    angular
     .module('blocJams')
     .factory('SongPlayer', SongPlayer);
 
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
