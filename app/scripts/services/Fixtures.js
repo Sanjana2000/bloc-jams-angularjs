@@ -71,7 +71,11 @@
     };
 
     Fixtures.getCollection = function(numberOfAlbums) {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> CP-Services-Part2
       var albums = [];
       for (var i = 0; i < numberOfAlbums; i++) {
         albums.push(albumPicasso);
@@ -79,6 +83,11 @@
       return albums;
     };
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> CP-Services-Part2
     return Fixtures;
   }
 

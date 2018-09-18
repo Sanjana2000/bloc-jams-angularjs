@@ -63,6 +63,6 @@ var playSong = function(song) {
 }
    angular
     .module('blocJams')
-    .factory('SongPlayer', SongPlayer);
+    .factory('SongPlayer', songPlayer);
 
 })();
