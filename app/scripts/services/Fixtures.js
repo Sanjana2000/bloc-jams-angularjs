@@ -70,11 +70,15 @@
       return albumPicasso;
     };
 
+
+
+//2nd public method 'getCollection'added
     Fixtures.getCollection = function(numberOfAlbums) {
       var albums = [];
       for (var i = 0; i < numberOfAlbums; i++) {
-        albums.push(albumPicasso);
+        albums.push(this.getAlbum());
       }
+
       return albums;
     };
 
