@@ -2,28 +2,21 @@
   function SongPlayer() {
     var SongPlayer = {};
 
-    var currentSong = null;
-<<<<<<< HEAD
 
-=======
->>>>>>> assignment-Services-Part2
-    /**
+var currentSong = null;
+
+
+    /*
      * @desc Buzz object audio file
      * @type {Object}
      */
     var currentBuzzObject = null;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> assignment-Services-Part2
-    /**
+    /*
      * @function setSong
      * @desc Stops currently playing song and loads new audio file as currentBuzzObject
      * @param {Object} song
      */
-
     var setSong = function(song) {
       if (currentBuzzObject) {
         currentBuzzObject.stop();
@@ -36,10 +29,9 @@
       });
 
       currentSong = song;
-
     };
 
-    /**
+    /*
      * @function playSong
      * @desc Starts playing the currently selected song and sets the song.playing Boolean flag
      * @param {Object} song
@@ -49,7 +41,7 @@
       song.playing = true;
     };
 
-    /**
+    /*
      * @method SongPlayer.play
      * @desc Checks to see if the song clicked was already the selected song and, if not,
      * sets the clicked song as the current song & plays it or, if so, and if paused,
@@ -63,29 +55,19 @@
       } else if (currentSong === song) {
         if (currentBuzzObject.isPaused()) {
           currentBuzzObject.play();
-<<<<<<< HEAD
-          song.playing = true;
-=======
->>>>>>> assignment-Services-Part2
         }
       }
     };
 
-<<<<<<< HEAD
-
-=======
-    /**
+    /*
      * @method SongPlayer.pause
      * @desc Pauses the currently playing song and clears the song.playing Boolean flag
      * @param {Object} song
      */
->>>>>>> assignment-Services-Part2
     SongPlayer.pause = function(song) {
       currentBuzzObject.pause();
       song.playing = false;
     };
-
-
 
     return SongPlayer;
   }
