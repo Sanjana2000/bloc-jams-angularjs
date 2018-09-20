@@ -1,4 +1,3 @@
-
 (function() {
   function SongPlayer() {
     var SongPlayer = {};
@@ -32,9 +31,9 @@ var currentSong = null;
       currentSong = song;
     };
 
-    /**
+    /**@method playSong.
      * @function playSong
-     * @desc Starts playing the currently selected song and sets the song.playing Boolean flag
+     * @desc Starts playing the currently selected song.
      * @param {Object} song
      */
     var playSong = function(song) {
@@ -62,7 +61,7 @@ var currentSong = null;
 
     /**
      * @method SongPlayer.pause
-     * @desc Pauses the currently playing song and clears the song.playing Boolean flag
+     * @desc Pauses the currently playing song.
      * @param {Object} song
      */
     SongPlayer.pause = function(song) {
