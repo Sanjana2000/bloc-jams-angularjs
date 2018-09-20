@@ -2,17 +2,14 @@
   function SongPlayer() {
     var SongPlayer = {};
 
-
-var currentSong = null;
-
-
-    /*
+    var currentSong = null;
+    /**
      * @desc Buzz object audio file
      * @type {Object}
      */
     var currentBuzzObject = null;
 
-    /*
+    /**
      * @function setSong
      * @desc Stops currently playing song and loads new audio file as currentBuzzObject
      * @param {Object} song
@@ -31,7 +28,7 @@ var currentSong = null;
       currentSong = song;
     };
 
-    /*
+    /**
      * @function playSong
      * @desc Starts playing the currently selected song and sets the song.playing Boolean flag
      * @param {Object} song
@@ -41,7 +38,7 @@ var currentSong = null;
       song.playing = true;
     };
 
-    /*
+    /**
      * @method SongPlayer.play
      * @desc Checks to see if the song clicked was already the selected song and, if not,
      * sets the clicked song as the current song & plays it or, if so, and if paused,
@@ -59,7 +56,7 @@ var currentSong = null;
       }
     };
 
-    /*
+    /**
      * @method SongPlayer.pause
      * @desc Pauses the currently playing song and clears the song.playing Boolean flag
      * @param {Object} song
