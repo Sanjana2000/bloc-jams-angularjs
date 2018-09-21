@@ -31,6 +31,11 @@
             scope.fillStyle = function() {
                 return {width: percentString()};
             };
+
+            scope.thumbStyle = function() {
+            		return { left: percentString() };
+
+                };
              // directive logic to return
              scope.onClickSeekBar = function(event) {
             var percent = calculatePercent(seekBar, event);
